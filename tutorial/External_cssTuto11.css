@@ -1,0 +1,27 @@
+body{
+background-color:#f6e2e9;
+font-family:cursive;
+font-size:150%;
+padding:3%;
+color:#5c7057;
+letter-spacing:5%;/*1.To give spacing between letters.*/
+word-spacing:10%;/*2.To give spacing between words.*/
+opacity:70%;/*3.To adjust the intensity of the text color*/
+}
+h1{
+font-family:Broadway;
+font-style:italic;/*4.To change font style to italic*/
+font-variant:small-caps;/*5.To change all letters to small caps*/
+}
+font{
+text-shadow:5px 5px 10px black;/*6.To add shadow under the text*/
+-webkit-text-stroke:0.3px black;
+color:#5c7057;/*7.To add an outline to text*/
+}
+p.border{
+width:600px;
+outline:2px solid #5c6b57; /*8.To add an outline around the paragraph*/
+outline-offset:6px;/*9.To add spacing between the outline and text*/
+padding:8px;
+border-radius:10px;
+}
