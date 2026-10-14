@@ -1,0 +1,27 @@
+body{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+main{
+display: flex;
+width: 100%;
+padding: 0;
+flex: 1;
+}
+
+iframe{
+width: 100%;
+height: 100%;
+border: none;
+}
+
+@media (max-width: 600px) {
+main{
+flex-direction: column;
+gap: 10px;
+display: flex;
+align-items: center;
+}
+}
