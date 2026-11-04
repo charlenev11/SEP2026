@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz - Lesson 16</title>
+<link rel="icon" href="hirono.jpg" type="image/jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{
+margin-top:50px;
+font-family:Calibri;
+}
+u{
+color:blue;
+font-weight:bold;
+}
+</style>
+<script>
+function validateForm(){
+let x=document.QuizL16.studentID.value;
+if (x==""){
+alert("Please provide your Student ID!");
+return false;
+}
+let y=document.QuizL16.studentname.value;
+if(y ==""){
+alert("Please provide your Name!");
+return false;
+}
+let z = document.QuizL16.email.value;
+if (z == "") {
+alert("Please provide your Email!");
+return false;
+}
+let a = document.QuizL16.icNo.value;
+if (a == "") {
+alert("Please provide your IC No.!");
+return false;
+}
+
+let b = document.QuizL16.courses.value;
+if (b == "0") {
+alert("Please choose your Course!");
+return false;
+}
+let c = document.QuizL16.dob.value;
+if (c == "") {
+alert("Please provide your Date of Birth!");
+return false;
+}
+
+if ( ( QuizL16.q1[0].checked == false) && ( QuizL16.q1[1].checked == false))
+{
+alert ("Please choose Yes or No for Q1") ;
+return false;
+}
+
+if ( ( QuizL16.q2[0].checked == false) && ( QuizL16.q2[1].checked == false))
+{
+alert ("Please choose Yes or No for Q2") ;
+return false;
+}
+if ( ( QuizL16.learned[0].checked == false) && (QuizL16.learned[1].checked == false) && (QuizL16.learned[2].checked == false) && (QuizL16.learned[3].checked == false))
+{
+alert ("No Check Box is checked!") ;
+return false;
+}
+
+let d = document.QuizL16.wishItems.value;
+if (d == "") {
+alert("Please provide your Wish Items & Suggestions!");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="QuizL16" onsubmit="return validateForm()" novalidate>
+<table border=1 align=center cellpadding=15>
+<tr>
+<td align=center><h2>DCS3003 Website Design Course Survey</h2>
+
+<table border=1 width=100% cellpadding=8 style="border-collapse:collapse; border:2px solid black">
+<tr>
+<td><u>Personal detail</u>
+
+<table cellpadding=2>
+<tr>
+<td><b>Student ID</b></td>
+<td>:<input type=text name=studentID maxlength=10 size=24></td>
+<td><b>Student Name</b></td>
+<td>:<input type=text name=studentname size=24></td>
+</tr>
+<tr>
+<td><b>Email address</b></td>
+<td>:<input type=email name=email size=24></td>
+<td><b>IC No. </b></td>
+<td>:<input type=text name=icNo size=24></td>
+</tr>
+<tr>
+<td><b>Course</b></td>
+<td>:<select name=courses>
+<option value="0">-List of Courses-</option>
+<option value="DCS">Diploma in Computer Science</option>
+<option value="DIB">Diploma in Business</option>
+<option value="DAS">Diploma in Airline Services</option>
+</select>
+</td>
+<td><b>D.O.B</b></td>
+<td>:<input type=date name=dob></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br>
+
+<table border=1 width=100% style="border-collapse:collapse; border:2px solid black">
+<tr>
+<td><u>Questions</u><br><font color=red><b>Please answer all questions</b></font>
+
+<table style="padding:18px 4px; width:100;">
+<tr>
+<td>1) Have you grasped the content of the Website Design so far?</td>
+<td><input type=radio name=q1 value=YES>YES<br>
+<input type=radio name=q1 value=NO>NO</td>
+</tr>
+<tr>
+<td>2) Can you now create a simple but interactive website?</td>
+<td><input type=radio name=q2 value=YES>YES<br>
+<input type=radio name=q2 value=NO>NO</td>
+</tr>
+<tr>
+<td>3)What have you learned so far?</td>
+<td><input type=checkbox name=learned value=Knowledge>Knowledge<br>
+<input type=checkbox name=learned value=Practical Skills>Practical Skills<br>
+<input type=checkbox name=learned value=Problem Solving>Problem Solving<br>
+<input type=checkbox name=learned value=Self-Exploration Skills>Self-Exploration Skills</td>
+</tr>
+<tr>
+<td colspan="2">4)Wish items/suggestions<font color=red>*</font><br><br>
+<textarea rows=3 cols=80 name=wishItems required></textarea></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<br><br>
+
+<input type=reset value=Reset style="margin-right:40px">
+<input type=submit value=Submit>
+<br><br>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
