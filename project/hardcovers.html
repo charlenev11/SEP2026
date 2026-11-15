@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Hardcovers | Dreams & Co.</title>
+<link rel="icon" href="Dreams&Co.png" type="image/png">
+<link rel="stylesheet" href="dreams&coCss.css">
+<script src="dreams&coJs.js" defer></script>
+</head>
+
+<body>
+<header>
+<img src="Dreams&Co.png" width=90>
+<nav>
+<a href="main.html">Home Page</a>
+<a href="hardcovers.html">Hardcover Journals</a>
+<a href="softcovers.html">Softcover Journals</a>
+<a href="spirals.html">Spiral Notebooks</a>
+<a href="stationeries.html">Stationeries</a>
+<a href="gift.html">Gifts & Tote Bags</a>
+<a href="cartPage.html">Cart</a>
+<a href="loginPage.html">Login</a>
+</nav>
+</header>
+
+<main>
+<h1>Hardcover Journals</h1>
+<p>Sturdy covers that are made to last through every page.</p>
+
+<div class="product" id="limoncello">
+<img src="Bound(blue).png" width=300>
+<h3>Limoncello Hardcover Journal</h3>
+<p>Price: RM49.00</p>
+Quantity: <input type="number" id="qty-limoncello" name="qty" value="1" min="1">
+<button type="button" onclick="addToCart(this)" data-id="limoncello" data-name="Limoncello Hardcover Journal" data-price="49.00">Add to Cart</button>
+</div>
+
+<div class="product" id="deer">
+<img src="HardCover(deerblue)Cover.png" width=300>
+<h3>Write to Let Go Hardcover Journal</h3>
+<p>Price: RM49.00</p>
+Quantity: <input type="number" id="qty-deer" name="qty" value=1 min=1>
+<button type="button" onclick="addToCart(this)" data-id="deer" data-name="Write to Let Go Hardcover Journal" data-price="49.00">Add to Cart</button>
+</div>
+
+<div class="product" id="leather">
+<img src="Leather(brown).png" width=300>
+<h3>Surfing the Wave Leather Journal</h3>
+<p>Price: RM59.00</p>
+Quantity: <input type="number" id="qty-leather" name="qty" value=1 min=1>
+<button type="button" onclick="addToCart(this)" data-id="leather" data-name="Surfing the Wave Leather Journal" data-price="59.00">Add to Cart</button>
+</div>
+
+</main>
+</body>
+</html>

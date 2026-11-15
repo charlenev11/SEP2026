@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Stationery | Dreams & Co.</title>
+<link rel="icon" href="Dreams&Co.png" type="image/png">
+<link rel="stylesheet" href="dreams&coCss.css">
+<script src="dreams&coJs.js" defer></script>
+</head>
+
+<body>
+<header>
+<img src="Dreams&Co.png" width=90>
+<nav>
+<a href="main.html">Home Page</a>
+<a href="hardcovers.html">Hardcover Journals</a>
+<a href="softcovers.html">Softcover Journals</a>
+<a href="spirals.html">Spiral Notebooks</a>
+<a href="stationeries.html">Stationeries</a>
+<a href="gift.html">Gifts & Tote Bags</a>
+<a href="cartPage.html">Cart</a>
+<a href="loginPage.html">Login</a>
+</nav>
+</header>
+
+<main>
+<h1>Stationery</h1>
+<p>Small extras for your desk and laptop.</p>
+
+<div class="product" id="stickers">
+<img src="Stickers.png" width=300>
+<h3>Journaling Sticker Pack</h3>
+<p>Price: RM12.00</p>
+Quantity: <input type="number" id="qty-stickers" name="qty" value="1" min="1">
+<button type="button" onclick="addToCart(this)" data-id="stickers" data-name="Journaling Sticker Pack" data-price="12.00">Add to Cart</button>
+</div>
+
+<div class="product" id="sticky">
+<img src="StickyNotes(darkfloral)Angle.png" width=300>
+<h3>Dark Floral Sticky Notes</h3>
+<p>Price: RM15.00</p>
+Quantity: <input type="number" id="qty-sticky" name="qty" value="1" min="1">
+<button type="button" onclick="addToCart(this)" data-id="sticky" data-name="Dark Floral Sticky Notes" data-price="15.00">Add to Cart</button>
+</div>
+
+<div class="product" id="bookmark">
+<img src="Bookmark(front).png" width=300>
+<h3>Book Stack Bookmark</h3>
+<p>Price: RM10.00</p>
+Quantity: <input type="number" id="qty-bookmark" name="qty" value="1" min="1">
+<button type="button" onclick="addToCart(this)" data-id="bookmark" data-name="Book Stack Bookmark" data-price="10.00">Add to Cart</button>
+</div>
+
+</main>
+</body>
+</html>
