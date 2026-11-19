@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html><head><title>JavaScript</title>
+<link rel=icon href=hirono.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+
+<script>
+function checknumber(){
+var minnumber=Number(document.getElementById("minnumber").value);
+var maxnumber=Number(document.getElementById("maxnumber").value);
+
+for(i=minnumber; i<=maxnumber; i++)
+{
+document.write("Using i++ : ")
+document.write(i + "<br>")
+}
+
+document.write("<br><br>")
+
+for(i=maxnumber; i>=minnumber; i--)
+{
+document.write("Using i-- : ")
+document.write(i+ "<br>")
+}
+return false;
+}
+</script>
+
+</head>
+<body>
+<h1>Javascript - Loops</h1>
+<form name=myjava onsubmit="return checknumber()">
+Insert a min number:
+<input type=number name=minnumber id=minnumber>
+<br><br>
+Insert a max number:
+<input type=number name=maxnumber id=maxnumber>
+<br><br>
+<input type=submit name=submit>
+</form>
+</body>
+</html>
