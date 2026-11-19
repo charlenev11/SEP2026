@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results Calculator</title>
+
+<script>
+function calculateMarks(){
+var mark1=Number(document.getElementById("mark1").value);
+var mark2=Number(document.getElementById("mark2").value);
+
+var total=mark1+mark2;
+
+document.getElementById("total").innerHTML=total;
+
+if(total>=50){
+document.getElementById("result").innerHTMl="PASS";
+} else {
+document.getElementById("result").innerHTMl="FAIL";
+}
+return false;
+}
+</script>
+
+</head>
+
+<body topmargin=10px>
+<form onsubmit="return calculateMarks()">
+
+<h1>Results Calculator</font></h1>
+<h4>Enter your marks for each type</h6>
+<table border=1 color=white width=60%>
+<tr>
+<td width=40px%>Type</td>
+<td width=100px>Weight</td>
+<td width=25px>Marks</td>
+</tr>
+<tr>
+<td>Assessment 1</td>
+<td>50%</td>
+<td><input type=text id="mark1"></td>
+</tr>
+<tr>
+<td>Assessment 2</td>
+<td>50%</td>
+<td><input type=text id="mark2"></td>
+</tr>
+<tr>
+<td colspan="2" align=center>Total Marks</td>
+<td id="total"></td>
+</tr>
+<tr>
+<td colspan="2" align=center>Pass/Fail</td>
+<td id="result"></td>
+</tr>
+</table>
+<br><br>
+
+<input type=submit value="Calculate">
+
+</form>
+
+</body>
+</html>
