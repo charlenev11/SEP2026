@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise Lesson 19</title>
+<link rel=icon href=hirono.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+
+</head>
+
+<body align=center><form>
+
+<script>
+function changeCourse(){
+var course=document.getElementById("Course").value;
+var subject=document.getElementById("Subject");
+
+if(course=="DCS"){
+subject.innerHTML=
+'<option value="0">-List of subjects-</option>'+
+'<option value="DCS3003">DCS3003</option>'+
+'<option value="DCS1003">DCS1003</option>'+
+'<option value="DCS1203">DCS1203</option>';
+} else if(course=="DIB"){
+subject.innerHTML=
+'<option value="0">-List of subjects-</option>'+
+'<option value="DIB1234">DIB1234</option>'+
+'<option value="DIB1235">DIB1235</option>'+
+'<option value="DIB1236">DIB1236</option>';
+} else if(course=="DAS"){
+subject.innerHTML=
+'<option value="0">-List of subjects-</option>'+
+'<option value="DAS4564">DAS4564</option>'+
+'<option value="DAS8523">DAS8523</option>'+
+'<option value="DAS3333">DAS3333</option>';
+} else {
+subject.innerHTML='<option value="0">-List of subjects-</option>';
+}
+}
+
+
+</script>
+
+<h4>Please select your course and subject</h4>
+
+<select id="Course" onchange="changeCourse()">
+<option value="0">-List of courses-</option>
+<option value="DCS">DCS</option>
+<option value="DIB">DIB</option>
+<option value="DAS">DAS</option>
+</select>
+
+<select id="Subject">
+<option value="0">-List of subjects-</option>
+
+</select>
+</form>
+</body>
+</html>
